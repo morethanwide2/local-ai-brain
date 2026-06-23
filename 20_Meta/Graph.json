@@ -7,7 +7,19 @@
       "category": "10_Wiki/💡 Topics"
     },
     {
-      "id": "6895f7a5-7e5e-4346-b3fa-c2d0047a8f78",
+      "id": "71299bc5-25db-4404-a820-cbdff17b6049",
+      "label": "Premium Korean E-commerce Hero Section Prompt",
+      "path": "10_Wiki/🚀 Skills/E-commerce/Premium Korean E-commerce Hero Section Prompt.md",
+      "category": "10_Wiki/🚀 Skills/E-commerce"
+    },
+    {
+      "id": "c979e7cf-77dc-4b51-ad3c-9632f25f54da",
+      "label": "Semiconductor Cooling Fan E-commerce 상세페이지 프롬프트 패키지",
+      "path": "10_Wiki/🚀 Skills/E-commerce/Semiconductor Cooling Fan E-commerce 상세페이지 프롬프트 패키지.md",
+      "category": "10_Wiki/🚀 Skills/E-commerce"
+    },
+    {
+      "id": "bb9d8d7b-5af6-434f-b587-4d456990c125",
       "label": "Fogg Behavior Model",
       "path": "10_Wiki/💡 Topics/Psychology/Fogg Behavior Model.md",
       "category": "10_Wiki/💡 Topics/Psychology"
@@ -16,7 +28,11 @@
   "edges": [
     {
       "source": "53a6ef7c-5271-47ff-87a2-5d2a8905d6dc",
-      "target": "6895f7a5-7e5e-4346-b3fa-c2d0047a8f78"
+      "target": "bb9d8d7b-5af6-434f-b587-4d456990c125"
+    },
+    {
+      "source": "71299bc5-25db-4404-a820-cbdff17b6049",
+      "target": "c979e7cf-77dc-4b51-ad3c-9632f25f54da"
     }
   ]
 }

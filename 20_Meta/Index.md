@@ -15,7 +15,8 @@ Welcome to your self-organizing knowledge base, curated by P-Reinforce.
 *No files synthesized yet.*
 
 ## [🚀 Skills](file:///d:/Connect%20AI/2.%20위키에이전트/10_Wiki/🚀%20Skills)
-*No files synthesized yet.*
+- [Premium Korean E-commerce Hero Section Prompt](file:///D:/Connect AI/2. 위키에이전트/10_Wiki/🚀 Skills/E-commerce/Premium Korean E-commerce Hero Section Prompt.md) - *국내 이커머스 상세페이지 상단 배치를 위한 '휴대용 냉각 선풍기' 프리미엄 히어로 섹션 이미지 생성용 상세 가이드 프롬프트.*
+- [Semiconductor Cooling Fan E-commerce 상세페이지 프롬프트 패키지](file:///D:/Connect AI/2. 위키에이전트/10_Wiki/🚀 Skills/E-commerce/Semiconductor Cooling Fan E-commerce 상세페이지 프롬프트 패키지.md) - *휴대용 반도체 냉각 선풍기의 국내 이커머스 최적화를 위한 12개 상세페이지 섹션별 종합 기획 및 비주얼 가이드라인 패키지.*
 
 ---
-*Last index update: 2026-06-23 18:03:45*
+*Last index update: 2026-06-23 18:05:55*
