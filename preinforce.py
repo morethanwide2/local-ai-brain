@@ -84,7 +84,21 @@ class LLMClient:
             
             # Simple keyword matching for better mock category
             content_lower = prompt.lower()
-            if "mindfulness" in content_lower or "meditation" in content_lower:
+            if "fogg" in content_lower or "fbm" in content_lower:
+                mock_data = {
+                    "category": "10_Wiki/💡 Topics/Psychology",
+                    "similarity_score": 0.95,
+                    "confidence_score": 0.98,
+                    "tags": ["behavior-design", "persuasion", "psychology", "ux"],
+                    "title": "Fogg Behavior Model",
+                    "one_line_summary": "인간의 행동은 동기(Motivation), 능력(Ability), 계기(Trigger)가 동시에 작용할 때 발생하며, 행동 변화를 위해서는 동기 부여보다 행동을 더 쉽게 만드는 것이 효과적이다.",
+                    "synthesized_patterns": "1. 동기 부여보다 복잡성을 낮추어 능력을 배려하는 것이 실질적 행동 유도에 유리하다.\n2. 계기(Trigger)는 대상의 현재 동기와 능력 상태에 맞춰 Spark, Facilitator, Signal로 매핑되어야 효과적이다.",
+                    "synthesized_details": "- **행동의 3대 요소:** Motivation, Ability, Trigger가 같은 순간에 존재해야 함.\n- **단순함의 6요소:** 시간, 돈, 신체적 노력, 두뇌 사이클, 사회적 일탈, 비일상성.\n- **계기의 3유형:** Spark(동기 유도), Facilitator(과업 단순화), Signal(신호 알림).",
+                    "parent": "10_Wiki/💡 Topics",
+                    "related": ["Mindfulness Practice", "Policy"]
+                }
+                return json.dumps(mock_data, indent=2, ensure_ascii=False)
+            elif "mindfulness" in content_lower or "meditation" in content_lower:
                 title = "Mindfulness Practice"
                 category = "10_Wiki/💡 Topics/Mindfulness"
                 related = ["Mindfulness Practice", "Policy"]
