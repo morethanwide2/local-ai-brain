@@ -82,8 +82,16 @@ class LLMClient:
             parent = "10_Wiki/💡 Topics"
             related = []
             
-            # Simple keyword matching for better mock category
-            content_lower = prompt.lower()
+            # Simple keyword matching based ONLY on the raw note content, NOT the entire prompt
+            raw_content = ""
+            if "--- RAW NOTE CONTENT ---" in prompt:
+                parts = prompt.split("--- RAW NOTE CONTENT ---")
+                if len(parts) > 1:
+                    raw_content = parts[1].split("------------------------")[0]
+            else:
+                raw_content = prompt
+            
+            content_lower = raw_content.lower()
             if "fogg" in content_lower or "fbm" in content_lower:
                 mock_data = {
                     "category": "10_Wiki/💡 Topics/Psychology",
