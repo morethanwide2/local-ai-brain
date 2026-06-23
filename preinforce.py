@@ -317,6 +317,10 @@ def git_sync(action_summary):
         # Check if git is initialized
         if not os.path.exists(".git"):
             return "local_dev"
+        # Check if there are any changes (staged or unstaged)
+        status_res = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True)
+        if not status_res.stdout.strip():
+            return "clean"
         # Stage all changes
         subprocess.run(["git", "add", "."], check=True, capture_output=True)
         # Clean action_summary for Windows ACP safety
@@ -777,6 +781,7 @@ def main():
                 if processed_any:
                     rebuild_graph_and_index()
                     check_for_refactoring(policy)
+                    git_sync("update graph and index metadata")
                     
                 time.sleep(args.watch)
         except KeyboardInterrupt:
@@ -804,9 +809,11 @@ def main():
     if processed_any:
         rebuild_graph_and_index()
         check_for_refactoring(policy)
+        git_sync("update graph and index metadata")
     else:
         # Rebuild graph anyway to ensure integrity
         rebuild_graph_and_index()
+        git_sync("rebuild graph and index metadata")
         
     print("Run completed successfully.")
 
