@@ -25,5 +25,5 @@ github_commit: "local_commit"
 
 ## 🔗 지식 연결 (Graph)
 - **Parent:** [[10_Wiki/💡 Topics]]
-- **Related:** [[Mindfulness Practice]], [[Policy]]
+- **Related:** [[Mindfulness Practice]], [[Policy]], [[Fogg Behavior Model]]
 - **Raw Source:** [[00_Raw/2026-06-23/mindfulness.md]]
