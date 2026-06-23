@@ -1,9 +1,9 @@
 # P-Reinforce RL Policy & Weights
 
 ## 📊 Active RL Weights
-- **w1 (Categorization Accuracy)**: 0.4
-- **w2 (Graph Connectivity)**: 0.3
-- **w3 (User Satisfaction)**: 0.3
+- **w1 (Categorization Accuracy)**: 0.350
+- **w2 (Graph Connectivity)**: 0.300
+- **w3 (User Satisfaction)**: 0.350
 
 ## ⚙️ Parameters & Thresholds
 - **Semantic Similarity Threshold**: 0.85
@@ -17,4 +17,4 @@
 - **Skills**: Prefer grouping execution guidelines, templates, prompts, and code snippets.
 
 ## 🔄 User Feedback History
-*No feedback collected yet. Neural pathways are ready to learn.*
+- 2026-06-23: Boundary Shift - User moved 'Mindfulness Practice' to '10_Wiki/💡 Topics'. Updated classification rules. Weight shift: w1=0.35, w2=0.30, w3=0.35. Details: Boundary Shift: User explicitly moved the file. Adjusted similarity bounds for this topic.

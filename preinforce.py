@@ -10,6 +10,23 @@ import datetime
 from pathlib import Path
 from dotenv import load_dotenv
 
+# Reconfigure stdout/stderr to handle UTF-8 and ignore encoding errors on Windows
+try:
+    sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+    sys.stderr.reconfigure(encoding='utf-8', errors='replace')
+except Exception:
+    pass
+
+def clean_subproc_str(text):
+    cleaned = []
+    for c in text:
+        o = ord(c)
+        if (32 <= o <= 126) or (0xAC00 <= o <= 0xD7A3) or (0x3130 <= o <= 0x318F):
+            cleaned.append(c)
+        elif c in ['\n', '\r', '\t']:
+            cleaned.append(c)
+    return "".join(cleaned).strip()
+
 # Load environment variables
 load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
@@ -221,8 +238,8 @@ def save_policy(w1, w2, w3, feedback_entry=None):
     content = policy_path.read_text(encoding="utf-8")
     
     content = re.sub(r"(w1 \(Categorization Accuracy\)\*\*:\s*)[\d\.]+", f"\\g<1>{w1:.3f}", content)
-    content = re.sub(r"(w2 \(Graph Connectivity\)\*\*:\s*)[\d\.]+", f"\\g<2>{w2:.3f}", content)
-    content = re.sub(r"(w3 \(User Satisfaction\)\*\*:\s*)[\d\.]+", f"\\g<3>{w3:.3f}", content)
+    content = re.sub(r"(w2 \(Graph Connectivity\)\*\*:\s*)[\d\.]+", f"\\g<1>{w2:.3f}", content)
+    content = re.sub(r"(w3 \(User Satisfaction\)\*\*:\s*)[\d\.]+", f"\\g<1>{w3:.3f}", content)
     
     if feedback_entry:
         feedback_section = "## 🔄 User Feedback History\n"
@@ -288,6 +305,8 @@ def git_sync(action_summary):
             return "local_dev"
         # Stage all changes
         subprocess.run(["git", "add", "."], check=True, capture_output=True)
+        # Clean action_summary for Windows ACP safety
+        action_summary = clean_subproc_str(action_summary)
         commit_msg = f"[P-Reinforce] {action_summary}"
         subprocess.run(["git", "commit", "-m", commit_msg], check=True, capture_output=True)
         print(f"Committed: {commit_msg}")
