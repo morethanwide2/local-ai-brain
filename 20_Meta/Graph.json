@@ -5,7 +5,18 @@
       "label": "Mindfulness Practice",
       "path": "10_Wiki/💡 Topics/Mindfulness Practice.md",
       "category": "10_Wiki/💡 Topics"
+    },
+    {
+      "id": "f3e998e2-53f2-4ae4-817e-1bf773583ea0",
+      "label": "Fogg Behavior Model",
+      "path": "10_Wiki/💡 Topics/Psychology/Fogg Behavior Model.md",
+      "category": "10_Wiki/💡 Topics/Psychology"
     }
   ],
-  "edges": []
+  "edges": [
+    {
+      "source": "53a6ef7c-5271-47ff-87a2-5d2a8905d6dc",
+      "target": "f3e998e2-53f2-4ae4-817e-1bf773583ea0"
+    }
+  ]
 }
