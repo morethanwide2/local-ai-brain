@@ -98,6 +98,34 @@ class LLMClient:
                     "related": ["Mindfulness Practice", "Policy"]
                 }
                 return json.dumps(mock_data, indent=2, ensure_ascii=False)
+            elif "premium" in content_lower and "hero" in content_lower:
+                mock_data = {
+                    "category": "10_Wiki/🚀 Skills/E-commerce",
+                    "similarity_score": 0.94,
+                    "confidence_score": 0.96,
+                    "tags": ["behavior-design", "e-commerce", "hero-section", "prompts"],
+                    "title": "Premium Korean E-commerce Hero Section Prompt",
+                    "one_line_summary": "국내 이커머스 상세페이지 상단 배치를 위한 '휴대용 냉각 선풍기' 프리미엄 히어로 섹션 이미지 생성용 상세 가이드 프롬프트.",
+                    "synthesized_patterns": "1. 모바일 가독성을 극대화하기 위해 다중 섹션이 아닌 단일 세로형 히어로 비주얼(860px)을 채택한다.\n2. 제품 비율의 왜곡을 방지하고 화이트/아이스 블루 기반의 프리미엄 가전 톤앤매너를 일관되게 고수한다.",
+                    "synthesized_details": "- **캔버스 사양:** 가로 860px, 세로 약 1900px, 롱페이지 콜라주나 다중 분할 배치 금지.\n- **비주얼 가이드:** 메탈릭 텍스처, 얼음 바람 및 블루 에너지 글로우 연출, 아이스 블루 그라데이션 배경.\n- **카피 레이아웃:** Pretendard 폰트 기반의 상단 카피, 하단 혜택 요약.",
+                    "parent": "10_Wiki/🚀 Skills",
+                    "related": ["Semiconductor Cooling Fan E-commerce 상세페이지 프롬프트 패키지", "Policy"]
+                }
+                return json.dumps(mock_data, indent=2, ensure_ascii=False)
+            elif "semiconductor" in content_lower or "package" in content_lower:
+                mock_data = {
+                    "category": "10_Wiki/🚀 Skills/E-commerce",
+                    "similarity_score": 0.96,
+                    "confidence_score": 0.97,
+                    "tags": ["behavior-design", "e-commerce", "detail-page", "prompts"],
+                    "title": "Semiconductor Cooling Fan E-commerce 상세페이지 프롬프트 패키지",
+                    "one_line_summary": "휴대용 반도체 냉각 선풍기의 국내 이커머스 최적화를 위한 12개 상세페이지 섹션별 종합 기획 및 비주얼 가이드라인 패키지.",
+                    "synthesized_patterns": "1. 이커머스 전환율 향상과 반품율 방지를 위해 과장 광고 요소를 배제하고 모바일 최적화 여백과 프리미엄 가전 톤앤매너를 유지한다.\n2. 문제 제기(Problem)에서부터 기술적 증명(Tech), 다채로운 사용 씬(Usage), 최종 FAQ/CTA에 이르기까지 12단계 설득 논리 구조를 제공한다.",
+                    "synthesized_details": "- **주요 섹션 구성:** Hero, Problem, Feature, Detail, Dark Tech, Wind, Foldable Stand, Portability, Usage Scene, Specs, Notice & FAQ, Final CTA.\n- **디자인 제약사항:** 중국식 난잡한 배치 지양, 가짜 인증마크 차단, 실제 제품 비율 및 라이프스타일 컷 유지.\n- **모바일 최적화:** 가독성 높은 국문 타이포그래피(Pretendard)와 그리드 형태의 사용처 카드가 핵심.",
+                    "parent": "10_Wiki/🚀 Skills",
+                    "related": ["Premium Korean E-commerce Hero Section Prompt", "Policy"]
+                }
+                return json.dumps(mock_data, indent=2, ensure_ascii=False)
             elif "mindfulness" in content_lower or "meditation" in content_lower:
                 title = "Mindfulness Practice"
                 category = "10_Wiki/💡 Topics/Mindfulness"
