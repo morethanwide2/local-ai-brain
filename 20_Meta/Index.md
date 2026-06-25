@@ -5,7 +5,7 @@ Welcome to your self-organizing knowledge base, curated by P-Reinforce.
 ---
 
 ## [🛠️ Projects](file:///d:/Connect%20AI/2.%20위키에이전트/10_Wiki/🛠️%20Projects)
-*No files synthesized yet.*
+- [Project Alpha Sprint](file:///D:/Connect AI/2. 위키에이전트/10_Wiki/🛠️ Projects/Alpha/Project Alpha Sprint.md) - *This is a mock synthesized insight for testing the P-Reinforce pipeline.*
 
 ## [💡 Topics](file:///d:/Connect%20AI/2.%20위키에이전트/10_Wiki/💡%20Topics)
 - [Mindfulness Practice](file:///D:/Connect AI/2. 위키에이전트/10_Wiki/💡 Topics/Mindfulness Practice.md) - *This is a mock synthesized insight for testing the P-Reinforce pipeline.*
@@ -19,4 +19,4 @@ Welcome to your self-organizing knowledge base, curated by P-Reinforce.
 - [Semiconductor Cooling Fan E-commerce 상세페이지 프롬프트 패키지](file:///D:/Connect AI/2. 위키에이전트/10_Wiki/🚀 Skills/E-commerce/Semiconductor Cooling Fan E-commerce 상세페이지 프롬프트 패키지.md) - *휴대용 반도체 냉각 선풍기의 국내 이커머스 최적화를 위한 12개 상세페이지 섹션별 종합 기획 및 비주얼 가이드라인 패키지.*
 
 ---
-*Last index update: 2026-06-23 18:05:55*
+*Last index update: 2026-06-26 00:52:50*
